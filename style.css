@@ -79,20 +79,17 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background: #fff;
     box-shadow: var(--box-shadow);
 }
 
-.header .logo {
-    font-size: 2.5rem;
-    font-weight: bold;
+.logo {
+    height: 100px;
+    width:200px;
+    margin-right:100px;
 }
-
-.header .logo i {
-    color: green;
-}
-
 .header .navbar a {
     font-size: 1.7rem;
     margin: 0 1.5rem;
@@ -286,16 +283,17 @@ section {
 }
 
 .Home {
+    height:60rem;
     display: flex;
-    background-image: url("image/banner-img.jpg");
-    background-size: cover;
+    background-image: url("image/background.jpg");
+    background-size: 100%;
     background-position: center;
     justify-content: center;
-    padding-top: 20rem;
-    padding-bottom: 10rem;
-
+    align-items: center;
+    margin-top: 10rem;
+   
+    object-fit: cover;
 }
-
 .Home .content {
 
     text-align: center;
@@ -304,7 +302,7 @@ section {
 
 .Home .content h3 {
     font-size: 3rem;
-    color: var(--black);
+    color: white;
 }
 
 .Home .content h3 span {
@@ -314,7 +312,7 @@ section {
 
 .Home .content p {
     font-size: 1.7rem;
-    color: var(--light-color);
+    color: white;
     padding: 1rem 0;
     line-height: 1.8;
 }
@@ -574,6 +572,7 @@ section {
     gap: 2rem;
     
 }
+
 .footer .box-container .box h3{
     font-size:2.5rem;
     color:var(--black);
@@ -720,21 +719,14 @@ section {
     }
     .footer .box-container .box .links {
     text-align: center;
-    margin-left:15rem;
+    justify-content: center;
+    }
+    .header .logo{
+        font-size: 2rem;
+    }
+    .header .icons div {
+        font-size: 2rem;
     }
     
 }
 
-@media (max-width:280px) {
-    .footer{
-        text-align: center;
-    }
-    .footer .box-container .box .links {
-    text-align: center;
-    margin-left:7rem;
-    }
-    .logo{
-        font-size:5px;
-       
-    }
-}
